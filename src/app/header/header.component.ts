@@ -17,12 +17,12 @@ export class HeaderComponent implements OnInit {
 
   onSelectRecipes() {
     console.log("clicked recipes");
-    this.menuEvent.emit("recipes");
+//    this.menuEvent.emit("recipes");
   }
 
   onSelectShoppingList() {
     console.log("clicked shopping list");
-    this.menuEvent.emit("shopping-list");
-  }  
+//    this.menuEvent.emit("shopping-list");
+  }
 
 }
