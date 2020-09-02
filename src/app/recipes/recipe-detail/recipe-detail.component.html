@@ -13,7 +13,8 @@
                 <button type="button" class="btn btn-primary dropdown-toggle">Manage Recipe <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <li><a style="cursor: pointer;" (click)="onAddIngredients()">Add Ingredients to Shopping List</a></li>
-                    <li><a style="cursor: pointer;">Edit Recipe</a></li>
+                    <li><a style="cursor: pointer;"
+                        [routerLink] = "['edit']">Edit Recipe</a></li>
                     <li><a style="cursor: pointer;">Delete Recipe</a></li>
                 </ul>
             </div>
