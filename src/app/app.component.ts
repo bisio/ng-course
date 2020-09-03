@@ -12,15 +12,5 @@ export class AppComponent {
   showShoppingList = false;
   currentRecipe: Recipe;
 
-  onMenuEvent(event: string) {
-    if (event === 'recipes'){
-      this.showRecipes = true;
-      this.showShoppingList = false;
-    } else {
-      this.showShoppingList = true;
-      this.showRecipes = false;
-    }
-    console.log(event);
-  }
 
 }

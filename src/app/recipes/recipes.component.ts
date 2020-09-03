@@ -11,15 +11,10 @@ import { ThrowStmt } from '@angular/compiler';
 export class RecipesComponent implements OnInit {
   selectedRecipe: Recipe;
 
-  @Output()
-  recipeEvent = new EventEmitter<Recipe>();
-
-  constructor(private recipeService: RecipeService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.recipeService.recipeSelected.subscribe( (recipe: Recipe) => {
-        this.selectedRecipe = recipe;
-    })
+   
   }
 
 }
